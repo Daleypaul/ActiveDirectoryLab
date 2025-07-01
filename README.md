@@ -20,33 +20,63 @@ Project consists of a simple PowerShell script that walks the user through "zero
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
+Identify the Target Device by Asset Tag: <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
+  <b>Start by launching the Microsoft Endpoint Configuration Manager (SCCM) console and navigating to the Devices node:
+
+Go to the Assets and Compliance section on the left panel.
+
+Click on Devices.
+
+In the search bar at the top, input the asset tag or partial computer name of the user’s device.
+
+Once the machine appears, note the asset tag (example: CMRI-LT70776618) for reference and to ensure you’re targeting the correct device.</b> 
+Add Device to an Existing Device Collectionk:  <br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
+<b>After confirming the correct device:
+
+Right-click on the device name.
+
+Hover over “Add Selected Items” in the context menu.
+
+Click “Add Selected Items to Existing Device Collection.”
+
+
+
+This action allows you to group the device with others targeted for the same software deployment policy./b> 
+Choose the Target Collection (New York Desktop Collection): <br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
+ <b>Next, the system will prompt you to choose from a list of existing collections:
+
+Scroll through the list and select “New York Desktop Collection” (or whichever location-based group is appropriate).
+
+Click OK or Next to finalize adding the machine.
+
+
+
+Once the machine is in the collection, any deployment policies tied to that collection — such as software pushes — will apply to this device.
+
+</b>
+ Wait for the Software Deployment on the Device :  <br/>
 <img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+ <b>Now that the machine is part of the target collection:
+
+The device will receive the updated policy from SCCM.
+
+On the user’s machine, open Software Center (type “Software Center” in the Start menu).
+
+Go to the Applications tab and wait for the newly pushed application to appear.
+
+Once visible, the app can be installed either automatically or manually, depending on the deployment settings.</b> 
+
 
 <!--
  ```diff

@@ -19,7 +19,7 @@ Project consists of a simple PowerShell script that walks the user through "zero
 
 <p align="center">
 Identify the Target Device by Asset Tag: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="IMG_3495.jpg" height="80%" width="80%" alt="Identifying Target Device "/>
 <br />
 <br />
   <b>Start by launching the Microsoft Endpoint Configuration Manager (SCCM) console and navigating to the Devices node:
@@ -32,7 +32,7 @@ In the search bar at the top, input the asset tag or partial computer name of th
 
 Once the machine appears, note the asset tag (example: CMRI-LT70776618) for reference and to ensure you’re targeting the correct device.</b> 
 Add Device to an Existing Device Collectionk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="IMG_3496.jpg" height="80%" width="80%" alt="Adding devices"/>
 <br />
 <br />
 <b>After confirming the correct device:
@@ -47,7 +47,7 @@ Click “Add Selected Items to Existing Device Collection.”
 
 This action allows you to group the device with others targeted for the same software deployment policy./b> 
 Choose the Target Collection (New York Desktop Collection): <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="IMG_3497.jpg" height="80%" width="80%" alt="NY Desk Collection"/>
 <br />
 <br />
  <b>Next, the system will prompt you to choose from a list of existing collections:
@@ -62,7 +62,7 @@ Once the machine is in the collection, any deployment policies tied to that coll
 
 </b>
  Wait for the Software Deployment on the Device :  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="IMG_3498.jpg" height="80%" width="80%" alt="Software Deployment"/>
 <br />
 <br />
  <b>Now that the machine is part of the target collection:
